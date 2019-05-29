@@ -1,0 +1,4 @@
+FROM oracle-serverjre-8
+ADD opencv
+ADD ESIRTPDockerSampleApp/target/fatjar.jar 
+CMD java -Djava.library.path=/home/barais/git/opencv/build/lib/ -jar target/fatjar-0.0.1-SNAPSHOT.jar
